@@ -4,6 +4,9 @@
         <meta charset="utf-8" />
         <title><?= $title ?></title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <?php if(isset($styles)): ?>
+            <link href="<?= 'css/' . $styles . '.css' ?>" rel="stylesheet" />
+        <?php endif ?>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,7 +24,7 @@
                         <a class="nav-link" aria-current="page" href="sobre.php">Sobre</a>
                     </li>
                     <li class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#">Teste</a>
+                        <a class="nav-link" aria-current="page" href="tabuada.php">Tabuada</a>
                     </li>
                 </div>
             </div>
