@@ -1,4 +1,5 @@
 <?php
+namespace template;
 
 function getHeader($styles = null) {
     include('includes/header.php');
